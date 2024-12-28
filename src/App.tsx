@@ -5,9 +5,10 @@ function App() {
 
   return (
     <>
+    welecom in shcoole mangment
     </>
-    
   )
 }
 
-export default App
+
+export default App;
