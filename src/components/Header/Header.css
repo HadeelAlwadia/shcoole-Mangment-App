@@ -6,10 +6,10 @@ header{
  
   }
   
-  .logo-contineer{
+  .logo-container{
     display: flex;
     height: 25%;
-    border-bottom:1px solid wheat;
+    border-bottom:1px solid rgb(248, 246, 241);
     align-items: center;
   justify-content: center;
   }
@@ -20,4 +20,10 @@ header{
 }
   .main-links{
     height: 80%;
+   
+  }
+  .main-links >li{
+    text-transform: capitalize;
+    height: 10%;
+    margin-top: 20px;
   }
