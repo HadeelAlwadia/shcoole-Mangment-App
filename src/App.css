@@ -1,7 +1,15 @@
 body{
   margin: 0;
 }
-main{
+*{box-sizing: border-box;}
+#root{
   background-color: #121212;
   height: 3000px;
+  color:white;
+  display: flex;
+}
+
+main{
+  width: 100%;
+  background-color: wheat;
 }
