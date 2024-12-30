@@ -4,7 +4,7 @@ body{
 *{box-sizing: border-box;}
 
 #root{
-  background-color: #020827;
+  background-color: #000208;
   height: 3000px;
   color:white;
   display: flex;

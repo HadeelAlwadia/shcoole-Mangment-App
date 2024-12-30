@@ -23,7 +23,14 @@ header{
    
   }
   .main-links >li{
+    padding: 12px 15px;
     text-transform: capitalize;
     height: 10%;
     margin-top: 20px;
+    width: 80%;
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    cursor: pointer;
   }
