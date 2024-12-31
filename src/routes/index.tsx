@@ -6,7 +6,12 @@ import Home from "../pages/home";
 const userinfo = localStorage.getItem('user-info');
 
 export const routes=createBrowserRouter([
-    {path:'/',element:userinfo? <Home/>:<Login/>}
+    {path:'/',element:<Home/>
+
+    }
+    ,{
+        path:'/login',element:<Login/>
+    }
 ]
     
 )

@@ -28,7 +28,7 @@ header{
     height: 10%;
     margin-top: 20px;
     width: 80%;
-    background-color: aqua;
+    background-color: rgb(43, 44, 44);
     display: flex;
     align-items: center;
     border-radius: 15px;
