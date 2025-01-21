@@ -1,24 +1,25 @@
-import React from 'react'
-import { useLocation } from 'react-router-dom';
 
-//this fun to check user
-const userinfo = localStorage.getItem('user-info');
-console.log(userinfo)
-
+import { Countainer } from '../../components/common/countainer'
 
 const Home = () => {
   return (
-    <>
-      {userinfo ? <div>
+    <Countainer childern={<>
+      <h1>
         home page
-      </div>:
-      <div>
+      </h1>
+      <a href='/auth/login'>
         go to login
-       </div> }
-         
+      </a>
     </>
+    }
+      height={'100vh'}
+      width={'100%'}
+      flexDirection={'column'}
+    />
+
 
   )
 }
 
 export default Home
+
