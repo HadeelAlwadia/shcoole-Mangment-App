@@ -30,7 +30,7 @@ const Header = () => {
 
       <ul className='main-links'>
         <li>
-          <a href={`/${id}/requests`}>
+          <a href={`/user/${id}/requests`}>
 
             <IoIosGitPullRequest />
             requests
@@ -39,14 +39,14 @@ const Header = () => {
         {type === 'admin' &&
           <>
             <li>
-              <a href={`/${id}/users`}>
+              <a href={`/admin/${id}/users`}>
 
                 <IoIosGitPullRequest />
                 users
               </a>
             </li>
             <li>
-              <a href={`/${id}/products`}>
+              <a href={`/admin/${id}/products`}>
                 <IoIosGitPullRequest />
                 products
               </a>
@@ -55,7 +55,7 @@ const Header = () => {
 
         }
         <li >
-          <a href={`/${id}/profile`}>
+          <a href={`/user/${id}/profile`}>
             <CgProfile />
             profile
           </a>

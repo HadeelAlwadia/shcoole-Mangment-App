@@ -42,6 +42,12 @@ interface Iproduct{
     color:string[],
     numOfItem:number
 }
+interface IcardParm{
+    bkUrl:string,
+    dataOfCard:Record<string,any>,
+    nameOfAction: string,
+    nameOfItem:string
+}
  type typeActionKeys='userInfo' |'requestsUser'|  'usersAdmin'| 'productsAdmin'
 
  type typeAppStateKeys='requestsUser'|'productsAdmin'|'usersAdmin'
@@ -49,6 +55,7 @@ interface Iproduct{
 type Icard=Iproduct|Irequest|Iuser
 
 type typeObject=Record<string,any>
+
 interface Iform {
     values?:typeObject
     childern: ReactElement
@@ -58,4 +65,4 @@ interface Iform {
 }
 
 
-export type {IuserInfo,Irequest,Iuser,Iproduct,IappState,Iaction,typeActionKeys,typeAppStateKeys,Icard,Iform,typeObject}
+export type {IuserInfo,Irequest,Iuser,Iproduct,IappState,Iaction,typeActionKeys,typeAppStateKeys,Icard,Iform,typeObject,IcardParm}

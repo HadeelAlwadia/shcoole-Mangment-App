@@ -18,7 +18,7 @@ const handleLogin = (values: {}) => {
   API_PRO.post('/auth/login',values).then(res => {
     console.log(res)
     storeInLocalStorage('userInfo',res.data)   
-    window.location.href =`/${res.data.id}/profile`
+    window.location.href =`/user/${res.data.id}/profile`
 
   }
 ).catch(err => {

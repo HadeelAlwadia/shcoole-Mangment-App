@@ -7,17 +7,18 @@ import Products from "../pages/admin/products";
 import Users from "../pages/admin/users";
 import Profile from "../pages/user/Profile";
 import Error from "../pages/error";
+import Header from "../components/header";
 
 
 export const routes = createBrowserRouter([
     { path: '/home', element: <Home /> },
     { path: '/auth/login', element: <Login /> },
     { path: '/auth/register', element: <Register /> },
-    { path: '/:userId/profile', element: <Profile /> },
-    { path: '/:userId/requests', element: <Requests /> },
-    { path: '/:userId/users', element: <Users /> },
-    { path: '/:userId/products', element: <Products /> },
-    { path: '*', element: <Error/> }
+    { path: '/user/:userId/profile', element: <><Header /><Profile /></> },
+    { path: '/user/:userId/requests', element: <><Header /><Requests /></> },
+    { path: '/admin/:userId/users', element: <><Header /><Users /></> },
+    { path: '/admin/:userId/products', element: <><Header /><Products /></> },
+    { path: '*', element: <Error /> }
 
 
 

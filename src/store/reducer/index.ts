@@ -1,3 +1,4 @@
+import { storeInLocalStorage } from "../../storage"
 import CONSTANTS from "../constants"
 
 const reducer = (state: any, action: any) => {
@@ -5,8 +6,9 @@ const reducer = (state: any, action: any) => {
   switch (action.type) {
 
     case 'toggleTheme': {
-      let theme = state.theme
-      return { ...state,  theme: theme === 'light' ? 'dark' : 'light' }
+      const newTheme= state.theme === 'light' ? 'dark' : 'light' ;
+            storeInLocalStorage('theme',newTheme)
+      return { ...state,  theme: newTheme }
 
     }
     case CONSTANTS.START_GET_USER_INFO: {

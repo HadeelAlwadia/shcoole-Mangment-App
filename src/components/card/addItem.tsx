@@ -38,7 +38,8 @@ const AddItem = ({ handleClose, values, bkUrl, perPage, nameOfItem }: IaddItem) 
     
 
         API_PRO.post(`${bkUrl}?id=${userId}`,valuesItem ).then(() => {
-            setTimeout(() => window.location.href = `/${userId}/${perPage}`, 1)
+            
+            setTimeout(() => window.location.href = `/user/${userId}/profile`, 1)
         }
         ).catch(err => console.log(err))
     }
